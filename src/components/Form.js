@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Error from './Error';
 
 
-const Form = () => {
+const Form = ({setSearch}) => {
     const [term, setTerm] = useState('');
     const[error, setError] = useState(false);
     const  imageSearch = e =>{
@@ -12,6 +12,7 @@ const Form = () => {
             return;
         }
         setError(false);
+        setSearch(term);
     }
     return (
         <form
