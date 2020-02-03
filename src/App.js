@@ -1,11 +1,15 @@
 import React from 'react';
-
+import From from './components/Form';
+import Form from './components/Form';
 
 function App() {
   return (
-   <h1>Pixabay
-     
-   </h1>
+ <div className = "container">
+   <div className = "jumbotron">
+     <p className = "lead text-center">Buscador de Imagenes</p>
+     <Form/>
+   </div>
+ </div>
   );
 }
 
